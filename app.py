@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the Excel sheet into a pandas DataFrame
-df = pd.read_excel('students.xlsx')  # Replace with your actual Excel file path
+df = pd.read_csv('students.csv')  # Replace with your actual Excel file path
 
 # Convert the Id column to string to handle large numbers properly
 df['Student Code'] = df['Student Code'].astype(str)
